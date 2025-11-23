@@ -9,7 +9,6 @@ const AddTask = () => {
 
     const handleAddTask = async(e) => {
         e.preventDefault()
-        console.log(taskData)
        let respone = await fetch('http://localhost:3500/add-task',{
           method:'Post',
           body:JSON.stringify(taskData),

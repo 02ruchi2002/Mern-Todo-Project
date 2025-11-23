@@ -6,6 +6,9 @@ import Navbar from './components/navbar'
 import { Route, Routes } from 'react-router-dom'
 import AddTask from './components/addTask'
 import TaskList from './components/list'
+import UpdateTask from './components/updateTask'
+import SignUp from './components/signUp'
+import Login from './components/login'
 
 function App() {
 
@@ -15,6 +18,9 @@ function App() {
    <Routes>
     <Route path='/' element={<TaskList/>}/>
     <Route path='/add' element={<AddTask/>}/>
+    <Route path='/Update/:id' element={<UpdateTask/>}/>
+    <Route path='/signup' element={<SignUp/>}/>
+    <Route path='/login' element={<Login/>}/>
    </Routes>
    </>
   )
